@@ -1,4 +1,4 @@
-sudo apt update
+sudo apt-get update
 cd /etc/apt
 echo "
 # See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
