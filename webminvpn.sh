@@ -1,5 +1,5 @@
-sudo apt-get update
-cd /etc/apt
+sudo apt-get update;
+cd /etc/apt;
 echo "
 # See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
 # newer versions of the distribution.
@@ -45,16 +45,16 @@ deb http://us.archive.ubuntu.com/ubuntu jammy-security multiverse
 # deb-src http://us.archive.ubuntu.com/ubuntu jammy-security multiverse
 deb http://download.webmin.com/download/repository sarge contrib
 sudo nano /etc/apt/sources.list
-deb http://download.webmin.com/download/repository sarge contrib" > sources.list
+deb http://download.webmin.com/download/repository sarge contrib" > sources.list;
 
-wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
-sudo apt update
-sudo apt install webmin -y
-sudo apt install docker.io -y
-sudo apt install docker-compose -y
-git clone https://github.com/alireza0/x-ui.git
-cd x-ui
-git checkout 1.4.1
+wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add;
+sudo apt update;
+sudo apt install webmin -y;
+sudo apt install docker.io -y;
+sudo apt install docker-compose -y;
+git clone https://github.com/alireza0/x-ui.git;
+cd x-ui;
+git checkout 1.4.1;
 docker-compose up -d
 
 
